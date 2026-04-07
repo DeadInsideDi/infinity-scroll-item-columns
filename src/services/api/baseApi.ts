@@ -11,7 +11,7 @@ export const axiosInstance = axios.create({
 export const INITIAL_QUERY_PARAMS: Required<ItemQueryRequest> = {
 	filter: '',
 	limit: 20,
-	cursor: 0,
+	skip: 0,
 }
 
 export const DEBOUNCE_DELAY = 250

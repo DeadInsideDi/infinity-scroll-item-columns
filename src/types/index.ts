@@ -7,12 +7,12 @@ export interface Item {
 export type ItemQueryRequest = {
 	filter?: string
 	limit?: number
-	cursor?: number
+	skip?: number
 }
 
 export type GetItemResponse = {
 	items: Item[]
-	cursor?: number
+	skip?: number
 }
 
 export type UpdateItemResponse = {

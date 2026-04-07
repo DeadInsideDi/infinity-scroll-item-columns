@@ -14,7 +14,7 @@ interface InfiniteScrollOptions {
 type PageParam = {
 	filter: string
 	limit: number
-	cursor: number
+	skip: number
 }
 
 export const useInfiniteScrollItems = <T extends HTMLElement>(
@@ -41,10 +41,10 @@ export const useInfiniteScrollItems = <T extends HTMLElement>(
 			})
 			return res
 		},
-		initialPageParam: { filter: debouncedFilter, limit, cursor: 0 },
-		getNextPageParam: ({ cursor }) => {
-			if (cursor === undefined) return undefined
-			return { cursor, limit, filter: debouncedFilter }
+		initialPageParam: { filter: debouncedFilter, limit, skip: 0 },
+		getNextPageParam: ({ skip }) => {
+			if (skip === undefined) return undefined
+			return { skip, limit, filter: debouncedFilter }
 		},
 		select: data => data.pages.flatMap(page => page.items),
 	})
