@@ -14,4 +14,4 @@ export const INITIAL_QUERY_PARAMS: Required<ItemQueryRequest> = {
 	skip: 0,
 }
 
-export const DEBOUNCE_DELAY = 250
+export const DEBOUNCE_DELAY = 350
