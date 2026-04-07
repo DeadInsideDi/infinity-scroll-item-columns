@@ -1,0 +1,76 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+
+	padding: 0.5rem 1rem;
+	white-space: nowrap;
+	border-radius: var(--radius-sm);
+	font-size: 0.875rem;
+	font-weight: 500;
+	transition: all 0.15s ease;
+	flex-shrink: 0;
+	user-select: none;
+
+	svg {
+		pointer-events: none;
+		flex-shrink: 0;
+
+		&:not([class*='size-']) {
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+
+	&:disabled {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+
+	&:focus-visible {
+		border-color: var(--ring);
+		box-shadow: 0 0 0 3px rgb(from var(--ring) r g b / 0.5);
+	}
+}
+
+.default {
+	background-color: var(--primary);
+	color: var(--primary-foreground);
+
+	&:hover {
+		background-color: rgb(from var(--primary) r g b / 0.9);
+	}
+	&:active {
+		background-color: rgb(from var(--primary) r g b / 0.8);
+	}
+}
+
+.outline {
+	border: 1px solid var(--border);
+	background-color: var(--background);
+	box-shadow: var(--shadow-sm);
+
+	&:hover {
+		background-color: var(--accent);
+		color: var(--accent-foreground);
+	}
+
+	&:active {
+		background-color: rgb(from var(--accent) r g b / 0.9);
+		color: rgb(from var(--accent-foreground) r g b / 0.9);
+	}
+}
+
+.secondary {
+	background-color: var(--secondary);
+	color: var(--secondary-foreground);
+
+	&:hover {
+		background-color: rgb(from var(--secondary) r g b / 0.8);
+	}
+
+	&:active {
+		background-color: rgb(from var(--secondary) r g b / 0.7);
+	}
+}

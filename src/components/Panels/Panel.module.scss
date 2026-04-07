@@ -1,0 +1,30 @@
+.panel {
+	width: 45%;
+	max-height: inherit;
+	min-height: stretch;
+
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-lg);
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+	border-bottom: 1px solid var(--border);
+
+	h2 {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		font-weight: 600;
+	}
+}
+
+.addNew {
+	display: flex;
+	gap: 0.5rem;
+}

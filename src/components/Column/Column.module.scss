@@ -1,0 +1,21 @@
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 0.5rem;
+	scrollbar-width: thin;
+	scrollbar-gutter: stable both-edges;
+	scrollbar-color: var(--muted-foreground) var(--background);
+	overflow: hidden auto;
+}
+
+.info {
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 0.75rem;
+	line-height: 1rem;
+	color: var(--muted-foreground);
+}

@@ -1,0 +1,24 @@
+.header {
+	height: 10vh;
+	padding-left: 1rem;
+	align-content: center;
+	border-bottom: 1px solid var(--border);
+
+	h1 {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		font-weight: 700;
+	}
+	p {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		color: var(--muted-foreground);
+	}
+}
+
+.main {
+	margin-block: 2.5vh;
+	max-height: 85vh;
+	display: flex;
+	justify-content: space-evenly;
+}

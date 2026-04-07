@@ -1,0 +1,19 @@
+.item {
+	padding: 0.5rem 1rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+
+	background-color: var(--secondary);
+	border-radius: var(--radius-sm);
+	box-shadow: var(--shadow);
+	cursor: grab;
+	user-select: none;
+	transition: opacity 0.15s ease;
+
+	&:hover {
+		background-color: rgb(from var(--secondary) r g b / 0.9);
+	}
+	&:active {
+		opacity: 0.5;
+	}
+}
